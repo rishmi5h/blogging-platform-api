@@ -26,22 +26,22 @@ mvn spring-boot:run
 ### API Documentation - [http://localhost:8080/api-docs](http://localhost:8080/api-docs)
 
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 ### GET /posts/{id} - returns a single post by id
-![img.png](img.png)
+![img.png](images/img.png)
 
 ### GET /posts - returns a list of posts
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 
 ### POST /posts - creates a new post
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 ### PUT /posts/{id} - updates a post
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 ### DELETE /posts/{id} - deletes a post
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 
 ## Copyright
