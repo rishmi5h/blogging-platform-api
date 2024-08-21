@@ -32,3 +32,6 @@ replay_pid*
 target/*
 
 mysql/*
+
+
+docker/mysql/data/*
