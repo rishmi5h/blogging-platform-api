@@ -2,7 +2,6 @@ package com.blogging.api.controller;
 
 import com.blogging.api.dto.BlogRecord;
 import com.blogging.api.model.Blog;
-import com.blogging.api.model.responseBlog;
 import com.blogging.api.service.BloggingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -19,12 +18,28 @@ public class BloggingController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public responseBlog createBlog(@RequestBody BlogRecord blogRecord){
+    public Blog createBlog(@RequestBody BlogRecord blogRecord){
         return bloggingService.createBlog(blogRecord);
     }
 
-        @GetMapping
+    @GetMapping
     public List<Blog> getPosts(){
         return bloggingService.getPosts();
-        }
+    }
+
+    @GetMapping("/{id}")
+    public Blog getPost(@PathVariable Long id){
+        return bloggingService.getPost(id);
+    }
+
+    @PutMapping("/{id}")
+    public Blog updateBlog(@PathVariable Long id, @RequestBody BlogRecord blogRecord){
+        return bloggingService.updateBlog(id, blogRecord);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteBlog(@PathVariable Long id){
+        bloggingService.deleteBlog(id);
+    }
+
 }
