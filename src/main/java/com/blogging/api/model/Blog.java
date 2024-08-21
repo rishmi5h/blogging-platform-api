@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.format.annotation.DateTimeFormat;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 @Entity
@@ -23,9 +23,9 @@ public class Blog {
 
     private String title;
     private String content;
-    private String author;
+    private String category;
     private List<String> tags;
-    private DateTimeFormat createdAt;
-    private DateTimeFormat updatedAt;
+    private Timestamp createdAt;
+    private Timestamp updatedAt;
 
 }
