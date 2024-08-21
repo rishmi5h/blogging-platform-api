@@ -19,12 +19,14 @@ mvn spring-boot:run
 ```
 
 
+
+## API Description
 ### Swagger UI - [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ### API Documentation - [http://localhost:8080/api-docs](http://localhost:8080/api-docs)
 
-## Description
 
+![img_4.png](img_4.png)
 ### GET /posts/{id} - returns a single post by id
 ![img.png](img.png)
 
@@ -40,3 +42,8 @@ mvn spring-boot:run
 
 ### DELETE /posts/{id} - deletes a post
 ![img_5.png](img_5.png)
+
+
+## Copyright
+
+Released under the Apache License 2.0. See the [LICENSE](https://github.com/codecentric/springboot-sample-app/blob/master/LICENSE) file.
