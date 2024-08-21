@@ -2,6 +2,8 @@
 
 cc: [source-challenge](https://roadmap.sh/projects/blogging-platform-api)
 
+### Swagger UI - [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+
 ## Description
 
 ### GET /posts/{id} - returns a single post by id
